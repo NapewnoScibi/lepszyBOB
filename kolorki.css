@@ -1,0 +1,11 @@
+html ,body
+{
+    margin: 0;
+    padding: 0;
+    background-color:#7558DB;
+}
+#obraz
+{
+    height: 530px;
+    width: 530px;
+}
