@@ -4,17 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bob mleczarz</title>
-    <link rel="icon" href="icon.ico">
-    <link rel="stylesheet" href="kolorki.css">
-    <img src="./baner.png" id="baner" class="baner">
+    <link rel="icon" href="./icon.ico">
+    <link rel="stylesheet" href="./kolorki.css">
 </head>
 <body>
-<a href="./index.html" class="center">Głowna</a><a href="./about.html" class="center">O stronie</a>
-<img src="./obrazki/epizod1.jpg" id="obraz" class="center">
-<input type="button" onclick="nastepnyObraz()" value="➡" class="mainbuttons">
-<input type="button" onclick="poprzedniObraz()" value="⬅" class="mainbuttons">
-<input type="button" onclick="instrukcja()" value="🛈" class="mainbuttons">
-<p id="numerObrazu" class="center">1</p>
+    <img src="./baner.png" id="baner" class="baner">
+    <br>
+    <a>[</a>
+    <a href="./index.html">Głowna</a>
+    <a>/</a>
+    <a href="./about.html">O stronie</a>
+    <a>]</a>
+    <br>
+    <br>
+    <p id="numerObrazu" class="center">1</p>
+    <img src="./obrazki/epizod1.jpg" id="obraz" class="reader">
+    <table>  
+        <tr>
+            <td><input type="button" onclick="poprzedniObraz()" value="⬅" class="navbuttons"></td>
+            <td><input type="button" onclick="nastepnyObraz()" value="➡" class="navbuttons"></td>
+        </tr>
+    </table>
+    <input type="button" onclick="ostatniObraz()" value="ostatni" class="mainbuttons">
+    <input type="button" onclick="pierwszyObraz()" value="pierwszy" class="mainbuttons">
+    <input type="button" onclick="instrukcja()" value="🛈" class="mainbuttons">
 </body>
 </html>
 <script src="mleko.js"></script>
