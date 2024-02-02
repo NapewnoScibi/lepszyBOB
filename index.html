@@ -10,16 +10,18 @@
 <body>
     <img src="./baner.png" id="baner" class="baner">
     <br>
-    <a>[</a>
-    <a href="./index.html">Głowna</a>
-    <a>/</a>
-    <a href="./about.html">O stronie</a>
+    <div class="reader">
+        <a>[</a>
+        <a href="./index.html">Głowna</a>
+        <a>/</a>
+        <a href="./about.html">O stronie</a>
     <a>]</a>
+    </div>
     <br>
     <br>
-    <p id="numerObrazu" class="center">1</p>
     <img src="./obrazki/epizod1.jpg" id="obraz" class="reader">
-    <table>  
+    <p id="numerObrazu" class="reader">1</p>
+    <table class="navtable">  
         <tr>
             <td><input type="button" onclick="poprzedniObraz()" value="⬅" class="navbuttons"></td>
             <td><input type="button" onclick="nastepnyObraz()" value="➡" class="navbuttons"></td>
@@ -28,6 +30,18 @@
     <input type="button" onclick="ostatniObraz()" value="ostatni" class="mainbuttons">
     <input type="button" onclick="pierwszyObraz()" value="pierwszy" class="mainbuttons">
     <input type="button" onclick="instrukcja()" value="🛈" class="mainbuttons">
-</body>
-</html>
-<script src="mleko.js"></script>
+    <div class="footer">
+        <table>
+            <tr>
+                <td>
+                    <a href="https://www.youtube.com/channel/UCOIcSBqEA_W5edOpt97lVEA" target="_blank" rel="noopener noreferrer"><img title="Kliknij" style="border-radius: 10%;" src="./logo.jpg" height="70" width="70"></a>
+                </td>
+                <td>
+                    <p>Autor: Bald2beMan</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </body>
+    </html>
+    <script src="mleko.js"></script>

@@ -2,15 +2,18 @@ body {
     font-size: 125%;
     background-color: rgb(36, 36, 36);
     color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .baner {
-    background-color: rgb(110, 110, 110);
+    background-color: rgb(50, 50, 50);
     margin:auto;
+    display: block;
     margin-bottom: 50px;
 }
 
 .button {
+    display: flex;
     background-color: rgb(70, 70, 70); 
     color: white; 
     border: 2px solid white;
@@ -23,6 +26,8 @@ body {
     border-radius: 5px;
     transition-duration: 0.4s;
     font-family: monospace;
+    justify-content: center;
+    align-items: center;
 }
 
 .button:focus{background-color:rgb(35, 24, 131);}
@@ -37,16 +42,32 @@ body {
     margin-right: auto;
     max-width: 50%;
     text-align: center;
+    display: block;
   }
 
+.navtable {
+    margin-left: auto;
+    margin-right: auto;
+}
+    
 .mainbuttons {
     display: block;
+    margin-left: auto;
+    margin-right: auto;
     width: 823px;
+    max-width: 50%;
     font-size: larger;
+    margin-bottom: 5px;
 }
-
 .navbuttons {
     display: block;
-    width: 408px;
+    width: 409px;
     font-size: larger;
+    margin-bottom: 5px;
+}
+
+.footer {
+    margin-top: 50px;
+    display: block;
+    background-color: rgb(50, 50, 50);
 }
