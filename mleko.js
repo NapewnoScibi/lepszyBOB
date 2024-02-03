@@ -5,7 +5,7 @@ function instrukcja()
 {
     aktualnyObraz = 0;
     obrazElement.setAttribute("src" , "./obrazki/epizod0.jpg");
-    document.getElementById("numerObrazu").innerHTML = "instrukcja";
+    document.getElementById("licznik").innerHTML = "instrukcja";
 }
 function nastepnyObraz()
 {
@@ -15,7 +15,7 @@ function nastepnyObraz()
     }
     aktualnyObraz++;
     obrazElement.setAttribute("src" , "./obrazki/epizod"+aktualnyObraz.toString()+".jpg" )
-    document.getElementById("numerObrazu").innerHTML = aktualnyObraz;
+    document.getElementById("licznik").innerHTML = aktualnyObraz;
 }
 function poprzedniObraz()
 {
@@ -29,7 +29,7 @@ function poprzedniObraz()
     }
     aktualnyObraz--;
     obrazElement.setAttribute("src" , "./obrazki/epizod"+aktualnyObraz.toString()+".jpg" )
-    document.getElementById("numerObrazu").innerHTML = aktualnyObraz;
+    document.getElementById("licznik").innerHTML = aktualnyObraz;
 }
 function pierwszyObraz()
 {
@@ -39,7 +39,7 @@ function pierwszyObraz()
     }
     aktualnyObraz = 1
     obrazElement.setAttribute("src","./obrazki/epizod1"+".jpg")
-    document.getElementById("numerObrazu").innerHTML = aktualnyObraz;
+    document.getElementById("licznik").innerHTML = aktualnyObraz;
 }
 function ostatniObraz()
 {
@@ -49,5 +49,11 @@ function ostatniObraz()
     }
     aktualnyObraz = MAXOBRAZ
     obrazElement.setAttribute("src","./obrazki/epizod"+MAXOBRAZ.toString()+".jpg")
-    document.getElementById("numerObrazu").innerHTML = aktualnyObraz;
+    document.getElementById("licznik").innerHTML = aktualnyObraz;
+}
+function epizod(numer)
+{
+    aktualnyObraz = numer;
+    obrazElement.setAttribute("src" , "./obrazki/epizod"+numer+".jpg");
+    document.getElementById("licznik").innerHTML = numer.toString();
 }

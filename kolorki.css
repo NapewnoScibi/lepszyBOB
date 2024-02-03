@@ -14,8 +14,8 @@ body {
 
 .button {
     display: flex;
-    background-color: rgb(70, 70, 70); 
-    color: white; 
+    background-color: rgb(70, 70, 70);
+    color: white;
     border: 2px solid white;
     padding: 4px 8px;
     text-align: center;
@@ -45,11 +45,7 @@ body {
     display: block;
   }
 
-.navtable {
-    margin-left: auto;
-    margin-right: auto;
-}
-    
+/*
 .mainbuttons {
     display: block;
     margin-left: auto;
@@ -65,9 +61,85 @@ body {
     font-size: larger;
     margin-bottom: 5px;
 }
-
+*/
 .footer {
     margin-top: 50px;
     display: block;
     background-color: rgb(50, 50, 50);
 }
+main
+{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+}
+nav{
+    grid-column: 2;
+}
+section.okienko
+{
+    height: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.4fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "licznik licznik licznik"
+      "przyciski przyciski przyciski"
+      "dol dol dol";
+    border: 3px violet solid;
+}
+section.plansza
+{
+    display: flex;
+    flex-wrap:wrap;
+    background-color: brown;
+}
+section.plansza > *
+{
+    margin: 5px;
+}
+div.razem
+{
+    padding: 3px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: green;
+}
+  #licznik
+  {
+    grid-area: licznik;
+  }
+  .przyciski
+  {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      ". .";
+    grid-area: przyciski;
+  }
+
+  #lewo
+  {
+    grid-area: przyciski;
+    grid-column: 1;
+    grid-row: 1;
+    height: inherit;
+  }
+  #prawo
+  {
+    height: inherit;
+    grid-area: przyciski;
+    grid-row: 1;
+    grid-column: 2;
+
+  }
+  .dol
+  {
+    grid-row:3;
+  }

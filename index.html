@@ -11,25 +11,89 @@
     <img src="./baner.png" id="baner" class="baner">
     <br>
     <div class="reader">
-        <a>[</a>
+        <span>[</span>
         <a href="./index.html">Głowna</a>
-        <a>/</a>
+        <span>/</span>
         <a href="./about.html">O stronie</a>
-    <a>]</a>
+    <span>]</span>
     </div>
     <br>
     <br>
-    <img src="./obrazki/epizod1.jpg" id="obraz" class="reader">
-    <p id="numerObrazu" class="reader">1</p>
-    <table class="navtable">  
-        <tr>
-            <td><input type="button" onclick="poprzedniObraz()" value="⬅" class="navbuttons"></td>
-            <td><input type="button" onclick="nastepnyObraz()" value="➡" class="navbuttons"></td>
-        </tr>
-    </table>
-    <input type="button" onclick="ostatniObraz()" value="ostatni" class="mainbuttons">
-    <input type="button" onclick="pierwszyObraz()" value="pierwszy" class="mainbuttons">
-    <input type="button" onclick="instrukcja()" value="🛈" class="mainbuttons">
+    <main>
+        <img src="./obrazki/epizod1.jpg" id="obraz" class="reader" alt="Strona komiksu">
+        <nav>
+            <section class="okienko">
+                <p id="licznik" class="reader">Strona-1</p>
+                <div class="przyciski">
+                <input type="button" onclick="poprzedniObraz()" value="⬅" id="lewo" class="navbuttons" alt="Zmien na następny obraz">
+                <input type="button" onclick="nastepnyObraz()" value="➡" id="prawo" class="navbuttons przyciski" alt="Zmien na poprzedni obraz">
+                </div>
+                <input type="button" onclick="ostatniObraz()" value="ostatni" class="mainbuttons" alt="Ustaw ostatni obraz">
+                <input type="button" onclick="pierwszyObraz()" value="pierwszy" class="mainbuttonsi" alt="Ustaw pierwszy obraz">
+                <input type="button" onclick="instrukcja()" value="🛈" class="mainbuttons" alt="Instrukcja czytania boba">
+            </section>
+            <section class="plansza">
+                <input type="button" onclick="epizod(1)" value="Epizod 1" alt="Epizod 1">
+                <input type="button" onclick="epizod(2)" value="Epizod 2" alt="Epizod 2">
+                <input type="button" onclick="epizod(3)" value="Epizod 3" alt="Epizod 3">
+                <input type="button" onclick="epizod(4)" value="Epizod 4" alt="Epizod 4">
+                <input type="button" onclick="epizod(5)" value="Epizod 5" alt="Epizod 5">
+                <input type="button" onclick="epizod(6)" value="Epizod 6" alt="Epizod 6">
+                <input type="button" onclick="epizod(7)" value="Epizod 7" alt="Epizod 7">
+                <input type="button" onclick="epizod(8)" value="Epizod 8" alt="Epizod 8">
+                <input type="button" onclick="epizod(9)" value="Epizod 9" alt="Epizod 9">
+                <input type="button" onclick="epizod(10)" value="Epizod 10" alt="Epizod 10">
+                <input type="button" onclick="epizod(11)" value="Epizod 11" alt="Epizod 11">
+                <input type="button" onclick="epizod(12)" value="Epizod 12" alt="Epizod 12">
+                <input type="button" onclick="epizod(13)" value="Epizod 13" alt="Epizod 13">
+                <div class="razem">
+                    <input type="button" onclick="epizod(14)" value="Epizod 14" alt="Epizod 14">
+                    <input type="button" onclick="epizod(15)" value="Epizod 15" alt="Epizod 15">
+                    <input type="button" onclick="epizod(16)" value="Epizod 16" alt="Epizod 16">
+                </div>
+                <input type="button" onclick="epizod(17)" value="Epizod 17" alt="Epizod 17">
+                <div class="razem">
+                    <input type="button" onclick="epizod(18)" value="Epizod 18" alt="Epizod 18">
+                    <input type="button" onclick="epizod(19)" value="Epizod 19" alt="Epizod 19">
+                    <input type="button" onclick="epizod(20)" value="Epizod 20" alt="Epizod 20">
+                </div>
+                <input type="button" onclick="epizod(21)" value="Epizod 21" alt="Epizod 21">
+                <div class="razem">
+                    <input type="button" onclick="epizod(22)" value="Epizod 22" alt="Epizod 22">
+                    <input type="button" onclick="epizod(23)" value="Epizod 23" alt="Epizod 23">
+                </div>
+                <input type="button" onclick="epizod(24)" value="Epizod 24" alt="Epizod 24">
+                <input type="button" onclick="epizod(25)" value="Epizod 25" alt="Epizod 25">
+                <input type="button" onclick="epizod(26)" value="Epizod 26" alt="Epizod 26">
+                <div class="razem">
+                    <input type="button" onclick="epizod(27)" value="Epizod 27" alt="Epizod 27">
+                    <input type="button" onclick="epizod(28)" value="Epizod 28" alt="Epizod 28">
+                    <input type="button" onclick="epizod(29)" value="Epizod 29" alt="Epizod 29">
+                </div>
+                <div class="razem">
+                    <input type="button" onclick="epizod(30)" value="Epizod 30" alt="Epizod 30">
+                    <input type="button" onclick="epizod(31)" value="Epizod 31" alt="Epizod 31">
+                    <input type="button" onclick="epizod(32)" value="Epizod 32" alt="Epizod 32">
+                    <input type="button" onclick="epizod(33)" value="Epizod 33" alt="Epizod 33">
+                </div>
+                <div class="razem">
+                    <input type="button" onclick="epizod(34)" value="Epizod 34" alt="Epizod 34">
+                    <input type="button" onclick="epizod(35)" value="Epizod 35" alt="Epizod 35">
+                </div>
+                <div class="razem">
+                    <input type="button" onclick="epizod(36)" value="Epizod 36" alt="Epizod 36">
+                    <input type="button" onclick="epizod(37)" value="Epizod 37" alt="Epizod 37">
+                    <input type="button" onclick="epizod(38)" value="Epizod 38" alt="Epizod 38">
+                    <input type="button" onclick="epizod(39)" value="Epizod 39" alt="Epizod 39">
+                </div>
+                <div class="razem">
+                    <input type="button" onclick="epizod(40)" value="Epizod 40" alt="Epizod 40">
+                    <input type="button" onclick="epizod(41)" value="Epizod 41" alt="Epizod 41">
+                    <input type="button" onclick="epizod(42)" value="Epizod 42" alt="Epizod 42">
+                </div>
+            </section>
+        </nav>
+    </main>
     <div class="footer">
         <table>
             <tr>
