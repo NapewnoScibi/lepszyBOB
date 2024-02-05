@@ -56,10 +56,10 @@ body {
 }
 
 .changelog {
-  font-style: italic;
   color: yellowgreen;
   text-align: center;
   animation: slide 30s linear infinite;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .changelog p {
@@ -81,6 +81,7 @@ body {
   .footer a {
     text-decoration: none;
     color: yellowgreen;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 main
 {
@@ -88,7 +89,7 @@ main
     grid-template-columns: 2fr 1.2fr;
     grid-template-rows: 1fr;
     gap: 0px 0px;
-    margin-right: 150px;
+    margin-right: 100px;
 }
 nav{
     grid-column: 2;
@@ -109,24 +110,25 @@ section.okienko
 }
 section.plansza
 {
-    display: flex;
-    flex-wrap:wrap;
-    background-color: rgb(50, 50, 50);
-    border: 1px white solid;
-    overflow: auto;
-    max-height: 600px;
+  display: flex;
+  flex-wrap:wrap;
+  background-color: rgb(50, 50, 50);
+  border: 1px white solid;
+  overflow: auto;
+  max-height: 600px;
 }
-section.plansza > *
+section.plansza > input
 {
     margin: 5px;
+    width: 100%;
+    height: 100%;
 }
-div.razem
+
+.razem
 {
-    padding: 5px;
-    display: flex;
-    flex-wrap: wrap;
-    border: 1px greenyellow solid;
+  border: 3px yellowgreen solid;
 }
+
   #licznik
   {
     grid-area: licznik;
