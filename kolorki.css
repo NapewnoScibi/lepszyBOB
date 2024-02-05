@@ -9,7 +9,6 @@ body {
     background-color: rgb(50, 50, 50);
     margin:auto;
     display: block;
-    margin-bottom: 50px;
 }
 
 .button {
@@ -43,17 +42,31 @@ body {
     display: block;
   }
 
-/*
-.mainbuttons {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 823px;
-    max-width: 50%;
-    font-size: larger;
-    margin-bottom: 5px;
+.changelog-container {
+  overflow: hidden;
+  display: block;
+  background-color: rgb(50, 50, 50);
+  margin-bottom: 50px;
+  padding: 15px;
 }
-*/
+
+@keyframes slide {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+.changelog {
+  font-style: italic;
+  color: yellowgreen;
+  text-align: center;
+  animation: slide 30s linear infinite;
+}
+
+.changelog p {
+  display: inline;
+  padding-right: 200px;
+}
+
 .navbuttons {
     font-size: x-large;
 }
@@ -62,6 +75,12 @@ body {
     margin-top: 50px;
     display: block;
     background-color: rgb(50, 50, 50);
+    padding: 15px;
+    text-align: center;
+  }
+  .footer a {
+    text-decoration: none;
+    color: yellowgreen;
 }
 main
 {
@@ -94,6 +113,8 @@ section.plansza
     flex-wrap:wrap;
     background-color: rgb(50, 50, 50);
     border: 1px white solid;
+    overflow: auto;
+    max-height: 600px;
 }
 section.plansza > *
 {

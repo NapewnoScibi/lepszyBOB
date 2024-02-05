@@ -1,5 +1,5 @@
 var aktualnyObraz = 1;
-const MAXOBRAZ = 42;
+const MAXOBRAZ = 48;
 var obrazElement = document.getElementById("obraz");
 function instrukcja()
 {
